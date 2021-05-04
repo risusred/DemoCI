@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     private var btnMain1: Button? = null
     private var btnMain2: Button? = null
     private var btnMain3: Button? = null
-
     private var msg: String =  "App Center Example" +
             "\nThis activity is connected with App Center." +
             "\nIf we click btn1 the app will crash." +
@@ -38,7 +37,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     private fun initAppCenter() {
         //APP CENTER
         AppCenter.start(
-            application, "de56e18b-9da7-428d-858d-6a45a4255389",
+            application, "f67ddbc5-38ea-490e-afa3-591582654b5b",
             Analytics::class.java, Crashes::class.java
         )
 
