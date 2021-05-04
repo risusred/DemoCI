@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_horizontal_margin">
 
-    <TextView
+    <TextView android:id="@+id/tv_main_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="?attr/selectableItemBackground" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button android:id="@+id/btn_main_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crash app 1"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+    <Button android:id="@+id/btn_main_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crash app 2"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+    <Button android:id="@+id/btn_main_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track info"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+</LinearLayout>
