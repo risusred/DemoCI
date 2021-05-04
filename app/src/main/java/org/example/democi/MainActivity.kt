@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     private fun initAppCenter() {
         //APP CENTER
         AppCenter.start(
-            application, "de56e18b-9da7-428d-858d-6a45a4255389",
+            application, "f67ddbc5-38ea-490e-afa3-591582654b5b",
             Analytics::class.java, Crashes::class.java
         )
 
