@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     private var btnMain1: Button? = null
     private var btnMain2: Button? = null
     private var btnMain3: Button? = null
-
     private var msg: String =  "App Center Example" +
             "\nThis activity is connected with App Center." +
             "\nIf we click btn1 the app will crash." +
